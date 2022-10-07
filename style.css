@@ -5,12 +5,15 @@
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
-   min-height: calc(100vh - 0.1px);
-  background-color: hsl(210, 46%, 95%);
+   font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: calc(100vh - 0.1px);
   padding: 0 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 13px;
   min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
 }
 .grid-container {
   display: grid;
