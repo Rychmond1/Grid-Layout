@@ -6,8 +6,9 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  /* min-height: calc(100vh - 0.1px);  */
-  padding: 6% 13%;
+   min-height: calc(100vh - 0.1px);
+  background-color: hsl(210, 46%, 95%);
+  padding: 0 13%;
   font-size: 13px;
   min-height: 100vh;
 }
