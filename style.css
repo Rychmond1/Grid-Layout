@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  /* min-height: calc(100vh - 0.1px);  */
+  padding: 6% 13%;
+  font-size: 13px;
+  min-height: 100vh;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+h5 {
+  color: white;
+}
+
+img {
+  width: 16%;
+  border-radius: 50%;
+  margin-right: 1.3rem;
+}
+p {
+  color: hsl(210, 46%, 95%);
+  opacity: 70%;
+}
+h3 {
+  color: hsl(210, 46%, 95%);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.img1 {
+  width: 7%;
+}
+.vg {
+  opacity: 0.5;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.grid-box {
+  padding: 1.6rem;
+  border-radius: 9px;
+  box-shadow: 10px 5px 13px 5px hsl(0, 0%, 81%);
+  transition: all 0.5s;
+}
+.grid-box:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: none;
+}
+.box1 {
+  background-color: hsl(263, 55%, 52%);
+}
+.box1:hover {
+  transform: translate(-1rem, -1rem);
+}
+.box2:hover {
+  transform: translate(1rem, -1rem);
+}
+.box3:hover {
+  transform: translate(-1.3rem, 0);
+  box-shadow: 10px 5px 13px 5px hsl(0, 0%, 81%);
+}
+
+.box4:hover {
+  transform: translate(1rem, -1rem);
+}
+.box5:hover {
+  transform: translate(1rem, -2rem);
+  box-shadow: 10px 5px 13px 5px hsl(0, 0%, 81%);
+}
+
+.box1 {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+.box2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.box4 {
+  background-color: hsl(219, 29%, 14%);
+}
+.box5 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box1,
+.box4 {
+  grid-column: span 2;
+}
+.box3,
+.box5 {
+  background-color: white;
+  color: black;
+}
+.box3 p,
+.box5 p {
+  color: hsl(219, 29%, 14%);
+}
+.box3 h5,
+.box5 h5 {
+  color: hsl(219, 29%, 14%);
+}
+.box3 h3,
+.box5 h3 {
+  color: hsl(219, 29%, 14%);
+}
+@media (max-width: 500px) {
+  body {
+    padding-bottom: 9rem;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-box:hover {
+    transform: translate(0, -1rem);
+    box-shadow: none;
+  }
+  .box3:hover,
+  .box5:hover {
+    box-shadow: 8px 2px 13px 3px hsl(0, 0%, 81%);
+  }
+}
